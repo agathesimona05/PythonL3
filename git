@@ -1,0 +1,17 @@
+# Initialiser le dépôt Git local
+git init --initial-branch main
+
+# Configurer votre identité Git
+git config --global user.name "Agathe"
+git config --global user.email "agathesimona05@gmail.com"
+
+# Vérifier la configuration
+git config --global --list
+
+# Créer le premier commit
+git add .
+git commit -m "Initial commit: project structure"
+
+# Lier à un dépôt distant après création sur GitHub
+git remote add origin https://github.com/username/pyvest.git
+git push -u origin main #(ou --set-upstream)
